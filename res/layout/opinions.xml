@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText android:id="@+id/et_op_content"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_marginLeft="9dip" android:layout_marginRight="9dip"
+		android:layout_marginTop="7dip" android:layout_marginBottom="2dip"
+		android:paddingLeft="9dip" android:paddingTop="10dip"
+		android:layout_weight="1.0" android:maxEms="10" android:minEms="10"
+		android:hint="请输入您的反馈意见" android:gravity="top" android:textColor="#737373" />
+	<Button
+           android:id="@+id/btn_op_submit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="20dp"
+           android:background="@drawable/sig_button"
+           android:paddingBottom="8dp"
+           android:paddingTop="8dp"
+           android:text="提  交"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+</RelativeLayout>

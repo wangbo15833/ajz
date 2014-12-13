@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">建设工程安全管理客户端</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="logo_title">建设工程安全管理客户端</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_msg">MsgActivity</string>
+    <string name="title_activity_chk">ChkActivity</string>
+    <string name="title_activity_qry">QryActivity</string>
+    <string name="title_activity_sig">SigActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="strInputAccHint">输入帐号</string>
+    <string name="strAccInputLabel">账号</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="login">登 录</string>
+    <string name="opt_hideLogin">消息静音</string>
+    <string name="opt_silent">消息静音</string>
+    <string name="opt_openVibra">开启振动 </string>
+    <string name="opt_acceptGroupMsg">接收群消息</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="about_title">建设工程安全管理系统客户端</string>
+    <string name="about_content">  本软件作为建设工程安全管理信息系统的android客户端，不能够与其它服务器连接。更多信息请与服务器所在单位联系。</string>
+    <string name="this_version">Version 3.0.1</string>
+    <string name="copyright">Copyright © 2013</string>
+    <string name="allrightsreserved">秦皇岛微讯信息技术有限公司 版权所有</string>
+    <string name="title_activity_settings">常规设置</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">常规</string>
+    <string name="serveraddr">服务器地址</string>
+    <string name="vibrate">振动</string>
+    <string name="ring">消息提示音</string>
+    <string name="rempsw">记住密码</string>
+    <string name="recommand">推荐记住密码</string>
+    <string name="default_serveraddr">192.168.1.122</string>
+
+    <string-array name="pref_ring_list_titles">
+        <item>静音</item>
+        <item>提示音1</item>
+        <item>提示音2</item>
+    </string-array>
+    <string-array name="pref_ring_list_values">
+        <item>0</item>
+        <item>tone1</item>
+        <item>tone2</item>
+    </string-array>
+
+    <string name="title_activity_home_detail">HomeDetail</string>
+    <string name="title_activity_chk_detail">ChkDetailActivity</string>
+    <string name="title_activity_re_login">ReLoginActivity</string>
+    <string name="title_activity_chk_new">ChkNewActivity</string>
+    <string name="title_activity_chk_img_list">ChkImgListActivity</string>
+    <string name="title_activity_chk_big_img">ChkBigImgActivity</string>
+    <string name="title_activity_tongz_detail">TongzDetailActivity</string>
+    <string name="title_activity_txinfo_detail">TxinfoDetailActivity</string>
+
+</resources>

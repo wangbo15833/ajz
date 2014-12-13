@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="rempsw"
+        android:summary="@string/recommand"
+        android:title="@string/rempsw" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/default_serveraddr"
+        android:key="serveraddr"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/serveraddr" />
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+    -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="tone1"
+        android:entries="@array/pref_ring_list_titles"
+        android:entryValues="@array/pref_ring_list_values"
+        android:key="ring"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/ring" />
+        <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+        
+<!--         android:dependency="notifications_new_message" -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="vibrate"
+        android:title="@string/vibrate" />
+
+</PreferenceScreen>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msglistLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3dp"
+    android:background="@drawable/lt_search_main_app_bg_pressed">
+
+    <TextView
+        android:id="@+id/msgItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/cont"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/lt_app_page_titlebar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/msgtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/msgItemImage"
+        android:text="消息标题"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/msglb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/msgItemImage"
+        android:layout_below="@id/msgtitle"
+        android:text="提醒或通知"
+        android:textColor="#555"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/msgtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@id/msgtitle"
+        android:layout_toRightOf="@id/msglb"
+        android:layout_marginLeft="20dp"
+        android:text="2013-06-05 12:33"
+        android:textColor="#555"
+        android:textSize="15sp" />
+       <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:clickable="true"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/msgItemImage"
+        android:layout_below="@id/msgtime"
+        android:text="消息内容"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+</RelativeLayout>

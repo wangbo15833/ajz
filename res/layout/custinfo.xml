@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:layout_centerHorizontal="true" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="姓        名:"/>
+    	<TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/custName"
+            android:textSize="16sp"
+        	android:text="王宝成"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+    	    android:layout_marginTop="10dp"
+        android:id="@+id/company">
+    	    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="工作单位:"/>
+    	    <TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/companyName"
+            android:textSize="16sp"
+        	android:text="秦皇岛微讯公司"/>
+    	</LinearLayout>
+    	<LinearLayout
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/company"
+    	    android:layout_marginTop="10dp"
+    	    android:id="@+id/ll_address">
+    	    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="所处位置:"/>
+    	    <TextView android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/address"
+            android:textSize="16sp"
+        	android:text="反向解析地址"/>
+    	</LinearLayout>
+    	<Button 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/ll_address"
+    	    android:id="@+id/bt_editPwd"
+    	    android:layout_marginTop="10dp"
+    	    android:text="修改密码"
+    	    />
+		<LinearLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/bt_editPwd"
+    	    android:id="@+id/ll_editpwd"
+    	    android:orientation="vertical"
+    	    android:visibility="gone"
+    	    >
+    	    <TextView android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:id="@+id/tv_msg"
+            	android:textSize="16sp"/>
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/et_oldPwd"
+            	android:textSize="16sp"
+		        android:hint="请输入旧密码"
+		        android:inputType="textPassword"/>
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/et_newPwd"
+            	android:textSize="16sp"
+		        android:hint="请输入新密码"
+		        />	
+		    <EditText android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/et_newPwd2"
+            	android:textSize="16sp"
+		        android:hint="请确认新密码"
+		        />
+
+		    <Button
+		        android:id="@+id/bt_submitpwd"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="确认"
+		         />
+
+		</LinearLayout>
+
+                            
+
+</RelativeLayout>

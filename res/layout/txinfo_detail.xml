@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    tools:context=".TxinfoDetailActivity" >
+
+<RelativeLayout 
+    	android:id="@+id/titlelayer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/lt_loadingbg"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="标题：" 
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:text="title_name"
+		android:textColor="#000"
+		android:textSize="15sp"/>
+</RelativeLayout>
+<RelativeLayout 
+    	android:id="@+id/timelayer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/lt_loadingbg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/titlelayer"
+        android:layout_marginTop="10dp"
+        >
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="时间：" />
+
+    <TextView
+        android:id="@+id/timer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textview2"
+        android:layout_toRightOf="@id/textview2"
+        android:text="2000-01-01" />
+    
+     <ImageView
+        android:id="@+id/sta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timer1"
+        android:layout_toRightOf="@id/timer1" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/timelayer"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/markToRead"
+    	android:scrollbars="vertical" 
+		android:textSize="15sp"
+    	android:textColor="#333333"
+        android:background="@drawable/lt_loadingbg"
+        android:text="content" />
+<Button
+    android:id="@id/markToRead"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="8dp"
+    android:textColor="#fff"
+    android:textSize="25sp"
+    android:text="标记为已读"
+    android:background="@drawable/lt_btn_bg_selector"
+    />
+
+</RelativeLayout>

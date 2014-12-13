@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+    	android:background="@drawable/lt_loadingbg"
+        android:orientation="vertical"
+    	tools:context=".SigActivity" >
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+
+       <AnalogClock
+           android:id="@+id/analogClock1"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="30dp" />
+
+
+       <RelativeLayout
+           android:id="@+id/relativeLayout1"
+           android:layout_width="fill_parent"
+           android:layout_height="100dp"
+           android:layout_alignTop="@id/analogClock1"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="10dp"
+           android:layout_toRightOf="@id/analogClock1"
+           android:background="@drawable/sigsta1" >
+
+           <TextView
+               android:id="@+id/timeInfo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="8dp"
+               android:layout_marginTop="5dp"
+               android:text="状态："
+               android:textColor="#555555"
+               android:textSize="18sp" />
+
+           <com.v_info.ajzclientv3.widget.DigitalClock
+               android:id="@+id/digitalClock1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/timeInfo"
+               android:layout_below="@+id/timeInfo"
+               android:layout_marginTop="5dp"
+               android:textColor="#555555" />
+
+           <TextView
+               android:id="@+id/sigSta"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/timeInfo"
+               android:layout_below="@+id/digitalClock1"
+               android:layout_marginTop="5dp"
+               android:text="获取签到状态..."
+               android:textColor="#555599"
+               android:textSize="18sp" />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/relativeLayout2"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/analogClock1"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="30dp"
+           android:background="@drawable/sig2"
+           android:minHeight="100dp"
+           android:paddingBottom="8dp"
+           android:scaleType="fitXY" >
+
+           <TextView
+               android:id="@+id/posInfo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="12dp"
+               android:layout_marginTop="5dp"
+               android:text="位置："
+               android:textColor="#555555"
+               android:textSize="18sp" />
+
+           <TextView
+               android:id="@+id/gpsInfo"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/posInfo"
+               android:layout_below="@+id/posInfo"
+               android:layout_marginTop="5dp"
+               android:text="请先等待系统定位后，再进行签到"
+               android:textColor="#555599"
+               android:textSize="12sp" />
+       </RelativeLayout>
+
+       <ImageView
+           android:id="@+id/sigstamp"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:layout_alignRight="@id/relativeLayout1"
+           android:layout_below="@id/relativeLayout1"
+           android:layout_marginRight="-18dp"
+           android:layout_marginTop="-55dp"
+           android:background="@drawable/siged"
+           android:rotation="-30"
+           android:scaleType="centerInside"
+           android:visibility="invisible" />
+
+       <Button
+           android:id="@+id/sigIn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="20dp"
+           android:background="@drawable/sig_button"
+           android:enabled="false"
+           android:paddingBottom="8dp"
+           android:paddingTop="8dp"
+           android:text="签  到"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+   </RelativeLayout>
+
+    </LinearLayout>

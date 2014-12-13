@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lt_loadingbg"
+ >
+<RelativeLayout 
+    	android:id="@+id/timelayer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+        >
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="15dp"
+        android:text="时间：" />
+
+    <TextView
+        android:id="@+id/timer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textview2"
+        android:layout_toRightOf="@id/textview2"
+		android:layout_centerVertical="true"
+        android:text="2000-01-01" />
+    
+     <ImageView
+        android:id="@+id/sta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timer1"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/timer1" />
+</RelativeLayout>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/btn_stat_RL">
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已阅"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn_stat"
+        />
+</RelativeLayout>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:layout_margin="5dp"
+    android:layout_below="@id/timelayer"
+    android:layout_above="@id/btn_stat_RL">
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:scrollbars="vertical" 
+		android:textSize="15sp"
+    	android:textColor="#333333"
+		android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>
+
+</RelativeLayout>

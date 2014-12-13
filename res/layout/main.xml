@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dip"
+        android:background="@drawable/app_home_menu_item_bar"
+        android:orientation="vertical" >
+
+        <com.v_info.ajzclientv3.widget.MenuButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/custinfo"
+            android:src="@drawable/app_home_menu_iv_head_bg"
+            android:text="个人资料"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_home_menu_item_bar" />
+
+        <com.v_info.ajzclientv3.widget.MenuButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app_home_menu_iv_setting_bg"
+            android:text="设置"
+            android:id="@+id/setting"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_home_menu_item_bar" />
+
+        <com.v_info.ajzclientv3.widget.MenuButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app_home_menu_iv_suggestion_bg"
+            android:text="意见反馈"
+            android:id="@+id/callback"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_home_menu_item_bar" />
+
+        <com.v_info.ajzclientv3.widget.MenuButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app_home_menu_iv_about_bg"
+            android:text="关于"
+            android:textColor="#ffffff"
+            android:id="@+id/about"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_home_menu_item_bar" />
+
+        <com.v_info.ajzclientv3.widget.MenuButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app_home_menu_iv_help_bg"
+            android:text="帮助"
+            android:id="@+id/help"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_home_menu_item_bar" />
+
+        <com.v_info.ajzclientv3.widget.MenuButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/app_home_menu_iv_exit_bg"
+            android:text="退出"
+            android:id="@+id/exit"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lt_app_page_titlebar" >
+
+            <ImageButton
+                android:id="@+id/page_title_memu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="#10000000"
+                android:padding="12dp"
+                android:src="@drawable/lt_app_page_menu_selector" />
+
+            <TextView
+                android:id="@+id/page_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="欢迎"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/page_main_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <com.v_info.ajzclientv3.widget.ScrollLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ScrollLayoutTest"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:background="#00000000" />
+
+            <com.v_info.ajzclientv3.widget.PageControlView
+                android:id="@+id/pageControl"
+                android:layout_width="fill_parent"
+                android:layout_height="40px"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/page_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lt_app_page_location_bg" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

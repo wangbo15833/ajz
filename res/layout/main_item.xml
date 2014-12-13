@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_item_bg"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="#47C1C1" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="地图"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/explain"
+        android:text="地图"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/title"
+        />
+	<ImageView 
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:id="@+id/item_icon"
+	    android:src="@drawable/lt_btn_poi_list_map_normal"
+	    android:layout_below="@id/explain"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginBottom="5dp"
+	    />
+	</RelativeLayout>
+</RelativeLayout>
